@@ -1,15 +1,13 @@
 #check whether a number is prime or not
-num = int(input("Enter a number: "))
+num = int(input())
 
-if num > 1:
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            print(f"{num} is not prime")
-            break
-    else:
-        print(f"{num} is prime")
+for i in range(2,num):
+    if num % i ==0:
+        print("no")
+        break
 else:
-    print(f"{num} is not prime")
+    print("yes")
+
 
 # Print all prime numbers between 1 and 100
 for num in range(2, 101):
