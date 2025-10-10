@@ -7,3 +7,6 @@ for char in string:
     else:
         frequency[char] = 1
 print("Character frequency:")
+for char, freq in frequency.items():
+    print(f"'{char}': {freq}")
+    
